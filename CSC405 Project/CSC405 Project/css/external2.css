@@ -1,0 +1,130 @@
+* {
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #EAEFFB;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    background-color: #fff;
+    height: 100vh;
+    width: 12.5%;
+    border: 1px solid #f4f4f4;
+    padding-top: 150px;
+}
+
+nav > div {
+    padding-bottom: 75px;
+    padding-left: 15%;
+}
+
+header {
+    margin-left: auto;
+    background-color: #fff;
+    height: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 30px;
+    width: 87.5%;
+    
+
+}
+
+header > div.title {
+    float: left;
+}
+
+header > div.user {
+    float: right;
+}
+
+div.dashboard {
+    float: right;
+    width: 87.5%
+}
+
+div.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;;
+}
+
+div.sessions {
+    background-color: #fff;
+    width: 92.5%;
+    border-radius: 10px;
+}
+
+div.supervisor {
+    background-color: #fff;
+    width: 92.5%;
+    border-radius: 10px;
+}
+
+div.sessions > div{
+    margin: 50px auto;
+    text-align: center;
+}
+
+div.supervisor > div{
+    margin: 50px auto;
+    text-align: center;
+}
+
+div.down {
+    display: flex;
+    justify-content: center;
+}
+
+div.cards {
+    display: flex;
+    width: 92.5%;
+    margin: 0px auto;
+}
+
+div.cards > div {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 28.33%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+div.cards > div#cancel {
+    margin: 0px auto;
+}
+
+div.cards > div > h1 {
+    font-size: 64px;
+    color: #AAB5F3
+
+}
+
+div.cards > div > p {
+    margin: 25px 0px;
+    
+}
+
+div.user {
+    width: 175px;
+}
+
+div.user > img {
+    float: left;
+}
+
+div.user > p {
+    float: right;
+    margin-top: 3px;
+}
