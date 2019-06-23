@@ -20,11 +20,11 @@ nav {
     height: 100vh;
     width: 12.5%;
     border: 1px solid #f4f4f4;
-    padding-top: 150px;
+    padding-top: 10px;
 }
 
 nav > div {
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     padding-left: 15%;
 }
 
@@ -66,18 +66,7 @@ div.sessions {
     border-radius: 10px;
 }
 
-div.supervisor {
-    background-color: #fff;
-    width: 92.5%;
-    border-radius: 10px;
-}
-
 div.sessions > div{
-    margin: 50px auto;
-    text-align: center;
-}
-
-div.supervisor > div{
     margin: 50px auto;
     text-align: center;
 }
@@ -127,64 +116,4 @@ div.user > img {
 div.user > p {
     float: right;
     margin-top: 3px;
-}
-
-div.filters {
-    display: flex;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-div.filters > form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.filters > p {
-    margin-right: 50px;
-}
-
-div.filters > form > select {
-    margin-right: 50px;
-    border: 0px solid #fff;
-    font-size: 16px;
-    color: #AAB5F3
-}
-
-div.filters > button {
-    width: 350px;
-    height: 50px;
-    border-radius: 7.5px;
-    border: 0px solid #fff;
-    background-color: #eaeffb;  
-    font-size: 16px; 
-}
-
-div.appointments {
-    background-color: #fff;
-    margin: 50px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-div.tables{ 
-    margin-top: 50px;
-    width: 100%;
-}
-
-table {
-    width: 100%;
-    height: 100px;
-    background-color: #EAEFFB;
-    border-radius: 7.5px;
-    text-align: left;
-}
-
-th {
-    padding-left: 20px;
 }
