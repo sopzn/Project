@@ -124,11 +124,18 @@ let submitStudent = function(){
 
 
 let submitSupervisor = function(){
-	let matric = el('matricno').value;
-	let valid = validate("matric", matric);
-	if (!valid) {
+	let start = el('startTime').value;
+	let end = el('endTime').value;
+
+	let pwd = el('supPwd').value;
+	let pwd2 = el('supPwdTwo').value;
+	let errorMsg = el('supervisorErrorMessage');
+	let btn = el('supervisorSubmit');
+
+	if ((end > start) && confirmPwd(pwd, pwd2)) {
 		let xhttp = new XMLHttpRequest();
 		let response;
+		errorMsg.innerHTML = "";
 
 		xhttp.onreadystatechange = function(){
 			if (this.readyState == 4){
@@ -138,12 +145,17 @@ let submitSupervisor = function(){
 				console.log(response.message);
 			}
 		}
-		let formData = new FormData(el(form));
+		let formData = new FormData(el('supervisorSignupForm'));
 		xhttp.open("POST", "../php/test.php", true);
 		xhttp.send(formData);
 
 	}
 	else {
-		console.log(valid);
+		if (!confirmPwd(pwd, pwd2)) {
+			errorMsg.innerHTML = "Passwords do not match";
+		}
+		else {
+			errorMsg.innerHTML = "Session start time cannot be later than end time";
+		}
 	}
 }

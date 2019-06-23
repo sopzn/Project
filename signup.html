@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="../css/signin.css">
+	<link rel="stylesheet" href="css/signin.css">
 	</link>
 	<title>Sign Up</title>
 
@@ -20,7 +20,7 @@
 
 <body>
 	<div class="image">
-		<img class="image" src="../img/illustration.png" alt="illustration">
+		<img class="image" src="img/illustration.png" alt="illustration">
 	</div>
 
 	<form class="form">
@@ -36,7 +36,7 @@
 	</form>
 
 	<div id="supervisorSignup">
-		<form class="form">
+		<form class="form" id="supervisorSignupForm" onsubmit="event.preventDefault(); submitSupervisor()">
 			<div class="file">
 				<p class="upload">Upload Photo</p>
 				<input class="file" type="file" name="profilepicture" accept="image/*" required></input>
@@ -73,15 +73,17 @@
 				</select>
 				<div class="time">
 					<p>From:</p>
-					<input class="time" type="time" name="start time" required></input>
+					<input id="startTime" class="time" type="time" name="start_time" required></input>
 				</div>
 				<div class="time">
 					<p>To:</p>
-					<input class="time" type="time" name="end time" required></input>
+					<input id="endTime" class="time" type="time" name="end_time" required></input>
 				</div>
 				<input class="text2" id="maxno" type="text" name="max no of students"
 					placeholder="Max. No. of Students" required></input>
 			</div>
+
+			<div id="supervisorErrorMessage"></div>
 			<input class="submit" type="submit" value="Add Session"></input>
 			<input class="submit" type="submit" value="Sign Up"></input>
 		</form>
@@ -114,11 +116,11 @@
 	</div>
 
 	<div class="signin">
-		<a class="signinnav" href="../html/signin.html">Sign In</a>
+		<a class="signinnav" href="signin.html">Sign In</a>
 	</div>
 
 
-	<script src="../js/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
