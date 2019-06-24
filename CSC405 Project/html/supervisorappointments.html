@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/external2.css">
+    </link>
+    <title>Appointments</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="supervisordashboard.html">Dashboard</a>
+        </div>
+        <div>
+            <a href="supervisorappointments.html">Appointments</a>
+        </div>
+        <div>
+            <a href="sessions.html">Sessions</a>
+        </div>
+    </nav>
+    <header>
+        <div class="title">
+            <h1>Appointments</h1>
+        </div>
+        <div class="user">
+            <img src=#>
+            <p>Name of Supervisor</p>
+        </div>
+    </header>
+    <div class="dashboard">
+        <div class="appointments">
+            <div class="filters">
+                <form class="filters">
+                    <p>Filter (Date):</p>
+                    <select name="date filter">
+                        <option value="all" selected>All</option>
+                        <option value="today">Today</option>
+                        <option value="this week">This week</option>
+                    </select>
+                    <p>Filter (Status):</p>
+                    <select name="status filter">
+                        <option value="all" selected>All</option>
+                        <option value="Scheduled">Scheduled</option>
+                        <option value="Concluded">Concluded</option>
+                        <option value="Cancelled">Cancelled</option>
+                    </select>
+                    <p>Sort By:</p>
+                    <select name="sort by">
+                        <option value="student">Student</option>
+                        <option value="date" selected>Date</option>
+                        <option value="Concluded">Status</option>
+                    </select>
+                </form>
+            </div>
+            <div class="tables">
+                <table>
+                    <tr>
+                        <th>Student</th>
+                        <th>Appointment Date & Time</th>
+                        <th>Status</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
